@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>動畫專案討論重點摘要</title>
+<style>
+:root{--ink:#243044;--muted:#667085;--blue:#405f91;--sky:#eaf1fb;--cream:#fbf8f1;--line:#e3e7ee;--gold:#d9a441;--green:#3f806c}
+*{box-sizing:border-box}
+body{margin:0;background:#f2f4f8;color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.75}
+.hero{background:linear-gradient(130deg,#243044,#405f91);color:white;padding:56px 22px 48px}
+.hero-inner,.container{max-width:1000px;margin:auto}
+.eyebrow{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;opacity:.8}
+h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25;margin:12px 0}
+.hero p{max-width:680px;color:#e4eaf4;margin:14px 0 0}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.pill{border:1px solid #ffffff55;border-radius:999px;padding:5px 12px;font-size:.82rem}
+.container{padding:28px 18px 56px}
+.intro{background:white;border:1px solid var(--line);border-radius:18px;padding:20px 24px;margin-top:-8px;box-shadow:0 8px 24px #2430440b}
+.section{margin-top:32px}
+.section-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px}
+.num{flex:none;background:var(--blue);color:white;border-radius:12px;width:42px;height:42px;display:grid;place-items:center;font-weight:800}
+h2{font-size:1.45rem;margin:0 0 3px}
+.sub{color:var(--muted);font-size:.93rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{margin:0 0 10px;font-size:1.08rem}
+.card ul{margin:0;padding-left:1.25rem}
+.card li+li{margin-top:7px}
+.tag{display:inline-block;font-size:.78rem;font-weight:700;border-radius:6px;padding:2px 8px;background:var(--sky);color:var(--blue);margin-bottom:8px}
+.callout{border-left:4px solid var(--gold);background:#fff8e8;padding:14px 17px;border-radius:0 12px 12px 0;margin-top:14px}
+.pipeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;counter-reset:step}
+.step{background:white;border:1px solid var(--line);border-radius:12px;padding:14px;position:relative}
+.step strong{display:block;margin-bottom:4px}
+.step small{color:var(--muted)}
+.arrow{text-align:center;color:var(--gold);font-weight:900;font-size:1.25rem}
+.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.metric{background:var(--sky);border-radius:14px;padding:16px;text-align:center}
+.metric strong{display:block;font-size:1.7rem;color:var(--blue);line-height:1.3}
+.metric span{font-size:.88rem;color:#465a78}
+.timeline{border-left:2px solid #cbd7e8;margin:10px 0 0 8px;padding-left:22px}
+.milestone{position:relative;padding:0 0 20px}
+.milestone:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--gold);left:-29px;top:7px;border:3px solid var(--cream)}
+.milestone h3{margin:0 0 4px;font-size:1.03rem}
+.checklist{list-style:none;padding:0;margin:0}
+.checklist li{padding:9px 0;border-bottom:1px solid var(--line)}
+.checklist li:last-child{border-bottom:0}
+.checklist li:before{content:"□";font-size:1.1rem;color:var(--green);font-weight:bold;margin-right:10px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:26px 10px 0}
+@media(max-width:680px){.grid{grid-template-columns:1fr}.pipeline{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.hero{padding-top:38px}.card{padding:17px}}
+@media print{body{background:white}.hero{padding:28px 20px}.container{padding:18px 0}.card,.intro,.step{break-inside:avoid;box-shadow:none}.section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">PROJECT MEETING · KEY NOTES</div>
+    <h1>動畫專案討論<br>重點摘要</h1>
+    <p>聚焦劇情修正、動畫流水線製作、進度驗收與 Logo 整合，讓創作方向更一致、製作流程更有效率。</p>
+    <div class="pills"><span class="pill">劇本與分鏡</span><span class="pill">動畫工序</span><span class="pill">時程管理</span><span class="pill">視覺識別</span></div>
+  </div>
+</header>
+<main class="container">
+  <div class="intro">
+    <strong>本次核心共識</strong>
+    <p>先建立自然可信的角色互動，再以「分階段、接力式」的動畫製作方式推進。每場戲完成一個階段，就交接至下一工序；先確保畫面順暢與進度，再逐步提升完成度。</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head"><div class="num">01</div><div><h2>劇情與角色關係修正</h2><div class="sub">劇本與分鏡調整｜讓關係更自然、情緒更到位</div></div></div>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">角色關係</span><h3>建立既有的熟悉感</h3>
+        <ul>
+          <li>洛洛與伊恩是鄰居，伊恩是小哥哥。</li>
+          <li>伊恩妹與洛洛是同學。</li>
+          <li>角色並非初次見面；放學等同學是日常，對話應自然、親近，避免重新介紹關係或過度生硬的台詞。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="tag">動作與笑點</span><h3>補足反應與畫面節奏</h3>
+        <ul>
+          <li>老師假髮被風吹掉後，需加強誇張反應，放大喜劇效果。</li>
+          <li>洛洛撿假髮時險些掉下去，老師要在後方驚呼並出聲勸阻。</li>
+        </ul>
+      </article>
+      <article class="card" style="grid-column:1/-1">
+        <span class="tag">情感鋪陳</span><h3>以小動作呈現青梅竹馬的關懷</h3>
+        <p>伊恩表面冷酷，但離開前仍回頭把藥效較好的 OK 繃交給洛洛。透過不直接說破的舉動，呈現他對洛洛的在意與照顧。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div class="num">02</div><div><h2>動畫製作流程與工序分工</h2><div class="sub">採帶狀作業模式，避免全員卡在同一個環節</div></div></div>
+    <div class="pipeline">
+      <div class="step"><strong>01｜草圖 / Layout</strong><small>確認構圖、動作與鏡頭安排</small></div>
+      <div class="step"><strong>02｜完稿</strong><small>整理線條，準備進入動畫製作</small></div>
+      <div class="step"><strong>03｜關鍵幀 Keyframes</strong><small>原畫人員掌握主要姿勢與動作節點</small></div>
+      <div class="step"><strong>04｜中割 Between</strong><small>補齊關鍵幀之間的動作過程</small></div>
+      <div class="step"><strong>05｜填色</strong><small>線稿與中割完成後，全員可加入支援</small></div>
+      <div class="step"><strong>06｜串流：聲音 / 剪輯</strong><small>整合聲音、鏡頭與影片輸出</small></div>
+    </div>
+    <div class="callout"><strong>流程原則：</strong>完成一場戲的當前階段，就將素材交給下一工序，不必等全片同一階段全部完成才往下走。</div>
+    <div class="grid" style="margin-top:14px">
+      <article class="card">
+        <h3>原畫與中割</h3>
+        <ul>
+          <li>主要角色繪製人員專注於關鍵幀，不必由一人從頭順畫 12 格。</li>
+          <li>其他組員負責補齊中割；複雜鏡頭交由畫功較佳者，簡單鏡頭共同分擔。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>填色與場景原畫</h3>
+        <ul>
+          <li>線稿與中割完成後，所有組員皆可支援填色。</li>
+          <li>指派特定組員專職背景與場景定色；下週需提出 1–2 張具光影與色彩的場景示意圖，作為色彩確認稿。</li>
+        </ul>
+      </article>
+      <article class="card" style="grid-column:1/-1">
+        <h3>行政 / 副導演：進度統籌</h3>
+        <p>指定一人維護進度登記表，逐鏡頭記錄負責人與目前狀態，至少包含原畫、中割、填色等工序，避免人員等待、工作重疊或交接遺漏。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div class="num">03</div><div><h2>規格、驗收與時程目標</h2><div class="sub">以可執行的標準維持進度，確保第一版全片如期交付</div></div></div>
+    <div class="metrics">
+      <div class="metric"><strong>12 fps</strong><span>採用一拍二</span></div>
+      <div class="metric"><strong>約 8 鏡</strong><span>兩週內完成第一場戲中割</span></div>
+      <div class="metric"><strong>4 個月</strong><span>持續運作帶狀製作流程</span></div>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>進度驗收流程</h3>
+        <ol style="padding-left:1.25rem;margin:0">
+          <li>中割完成後，匯出 PSD 或測試影片。</li>
+          <li>測試影片以每秒 12 幀播放，確認動作是否順暢。</li>
+          <li>上傳至群組並標註老師確認。</li>
+          <li>以「先求有、再求好」為審查原則；視覺順暢即可先行通過，再下發填色。</li>
+        </ol>
+      </article>
+      <article class="card">
+        <h3>兩週內的具體目標</h3>
+        <ul class="checklist">
+          <li>第一場戲約 8 個鏡頭全部完成中割。</li>
+          <li>至少完成 4 個鏡頭的填色。</li>
+          <li>持續更新鏡頭進度表並落實工序交接。</li>
+        </ul>
+      </article>
+    </div>
+    <div class="timeline">
+      <div class="milestone"><h3>現在｜建立流水線</h3><p>確認鏡頭分工、負責人與進度登記方式，避免全員集中在分鏡或原畫。</p></div>
+      <div class="milestone"><h3>兩週內｜完成第一場戲階段目標</h3><p>約 8 個鏡頭完成中割，至少 4 個鏡頭完成填色，並透過 12 fps 測試影片送審。</p></div>
+      <div class="milestone"><h3>未來四個月｜穩定接力製作</h3><p>將帶狀流程視為日常工作節奏，持續完成各場戲與後續工序，確保按時交付第一版全片。</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div class="num">04</div><div><h2>Logo 設計整合</h2><div class="sub">保留標誌設計感，統一專案的溫情視覺調性</div></div></div>
+    <div class="grid">
+      <article class="card">
+        <h3>目前成果</h3>
+        <p>兩位設計者的 Logo 皆有明顯進步，已從單純文字排版轉向具備標誌識別感的設計。</p>
+      </article>
+      <article class="card">
+        <h3>整合與修正方向</h3>
+        <ul>
+          <li>結合「雲彩」與「空島」的意象。</li>
+          <li>調整過於硬朗、偏美式英雄風格的線條，使其更貼近專案溫暖、細膩的氛圍。</li>
+        </ul>
+      </article>
+      <article class="card" style="grid-column:1/-1">
+        <h3>下週交付項目</h3>
+        <ul class="checklist">
+          <li>兩位設計者共享素材與 Illustrator 原始檔。</li>
+          <li>各自組裝、延伸設計方向。</li>
+          <li>每人提出 2–3 款最滿意的完稿，供最後決選。</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+  <footer>動畫專案討論重點摘要｜可直接以瀏覽器開啟，亦可使用瀏覽器列印功能另存為 PDF。</footer>
+</main>
+</body>
+</html>
